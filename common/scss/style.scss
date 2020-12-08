@@ -134,13 +134,13 @@ $breakpoints: (
   }
   &-left{
     display: flex;
-    width: 254px;
+    width: auto;
     &-logoPicContainer{
       height: 47px;
       width: 47px;
       @include mq(sp) {
         height: 40px;
-        width: 40px;
+        width: auto;
       }
     }
     &-logoPic{
