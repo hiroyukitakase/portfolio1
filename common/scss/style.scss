@@ -154,6 +154,7 @@ $breakpoints: (
       height: 47px;
       line-height: 47px;
       width: 191px;
+      word-break: break-all;
       @include mq(md) {
 
       }
