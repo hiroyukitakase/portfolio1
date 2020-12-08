@@ -134,14 +134,13 @@ $breakpoints: (
   }
   &-left{
     display: flex;
-    justify-content: space-between;
     width: 254px;
     &-logoPicContainer{
       height: 47px;
       width: 47px;
       @include mq(sp) {
         height: 40px;
-        width: auto;
+        width: 40px;
       }
     }
     &-logoPic{
@@ -153,6 +152,8 @@ $breakpoints: (
       font-size: 24px;
       height: 47px;
       line-height: 47px;
+      margin-left: 16px;
+      width: 191px;
       white-space: pre;
       @include mq(md) {
 
