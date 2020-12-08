@@ -1,8 +1,8 @@
 body {font-family: 'Noto Sans JP', sans-serif; color: #333333; }
 a { text-decoration: none; color: #333333;  -webkit-tap-highlight-color:rgba(0,0,0,0); cursor:pointer;}
 $breakpoints: (
-  'sp': 'screen and (max-width: 550px)',
   'md': 'screen and (max-width: 900px)',
+  'sp': 'screen and (max-width: 550px)',
 ) !default;
 
 
@@ -81,8 +81,9 @@ $breakpoints: (
     &-logoPicContainer{
       height: 47px;
       width: 47px;
-      @include mq(md) {
-
+      @include mq(sp) {
+        height: 40px;
+        width: 40px;
       }
     }
     &-logoPic{
@@ -97,7 +98,7 @@ $breakpoints: (
       margin-left: 16px;
       width: 191px;
       @include mq(sp) {
-        font-size: 22px;
+        font-size: 18px;
         width: auto;
       }
     }
@@ -799,8 +800,8 @@ input[type="submit"] {
 
 .fa-bars:before {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 15px;
+    right: 15px;
   }
 #gnav-btn {
   border-radius: 50%;
@@ -808,11 +809,11 @@ input[type="submit"] {
   background: transparent linear-gradient(90deg, #FA41CC 0%, #6020B0 100%) 0% 0% no-repeat padding-box;
   color: #fff;
   font-size: 22px;
-  height: 40px;
+  height: 50px;
   position: fixed;
-  top: 25px;
-  right: 25px;
-  width: 40px;
+  top: 20px;
+  right: 15px;
+  width: 50px;
   z-index: 100;
 }
   #gnav-input:checked ~ #gnav-content {
