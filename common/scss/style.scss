@@ -153,6 +153,7 @@ $breakpoints: (
       font-size: 24px;
       height: 47px;
       line-height: 47px;
+      white-space: pre;
       @include mq(md) {
 
       }
